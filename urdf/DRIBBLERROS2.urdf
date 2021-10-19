@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="DRIBBLERROS2">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0203694142070934 0.0166762574365357 0.0985105964830505"
+        rpy="0 0 0" />
+      <mass
+        value="0.216799467365492" />
+      <inertia
+        ixx="0.000567793513793956"
+        ixy="-7.97799617635158E-06"
+        ixz="-6.33763754098118E-06"
+        iyy="0.000584785039451052"
+        iyz="-3.85993573026436E-06"
+        izz="4.46609423289594E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DRIBBLERROS2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DRIBBLERROS2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1 ">
+    <inertial>
+      <origin
+        xyz="0.0135 -0.06 -0.065471"
+        rpy="0 0 0" />
+      <mass
+        value="0.034554" />
+      <inertia
+        ixx="2.5293E-05"
+        ixy="7.086E-15"
+        ixz="1.1518E-14"
+        iyy="2.5233E-05"
+        iyz="-4.5066E-15"
+        izz="2.1458E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DRIBBLERROS2/meshes/link1 .STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://DRIBBLERROS2/meshes/link1 .STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.045529 0.076677 0.066206"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1 " />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
